@@ -15,7 +15,7 @@ import {
 
 export default function Hero() {
   return (
-    <Container maxW={"7xl"} mt={'1%'}>
+    <Container maxW={"7xl"} mt={"1%"}>
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
@@ -40,21 +40,24 @@ export default function Hero() {
                 position: "absolute",
                 bottom: 1,
                 left: 0,
-                bg: "red.400",
+                bg: "#4299e1",
                 zIndex: -1,
               }}
             >
               Hola! soy
             </Text>
             <br />
-            <Text as={"span"} color={"red.400"}>
-            Matias Torres
+            <Text as={"span"} color={"#4299e1"}>
+              Matias Torres
             </Text>
           </Heading>
           <Text color={"#d9d9e3"}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
+            ¡Hola! Soy Matias Torres, un apasionado desarrollador web con más de
+            2 años de experiencia en la creación de aplicaciones y
+            funcionalidades. Me especializo en Front End development y he
+            contribuido a la construcción de interfaces de usuario atractivas y
+            soluciones eficientes. Mis habilidades principales incluyen: - React
+            - TypeScript - Node.js - AWS - GraphQL - MongoDB
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -66,8 +69,8 @@ export default function Hero() {
               fontWeight={"normal"}
               px={6}
               colorScheme={"red"}
-              bg={"red.400"}
-              _hover={{ bg: "red.500" }}
+              bg={"#4299e1"}
+              _hover={{ bg: "#015397" }}
             >
               Get started
             </Button>
@@ -76,7 +79,7 @@ export default function Hero() {
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
+              leftIcon={<PlayIcon h={4} w={4} color={"#4299e1"} />}
             >
               How It Works
             </Button>
@@ -97,7 +100,7 @@ export default function Hero() {
             top={{ base: "-100%", sm: "-25%", lg: "-20%" }}
             left={0}
             zIndex={-1}
-            color={"red.400"}
+            color={"#4299e1"}
           />
           <Box
             position={"relative"}

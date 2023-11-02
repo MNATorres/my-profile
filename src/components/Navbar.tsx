@@ -11,44 +11,46 @@ import {
   MenuItem,
   MenuDivider,
   useDisclosure,
-  useColorModeValue,
   Stack,
   Link,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
+import cv from "./../../React-Developer-Matias-Torres.pdf";
 
-interface Props {
-  children: React.ReactNode;
-}
-
-const Links = ["Dashboard", "Projects", "Team"];
-
-const NavLink = (props: Props) => {
-  const { children } = props;
-
-  return (
-    <Box
-      as="a"
-      px={2}
-      py={1}
-      rounded={"md"}
-      _hover={{
-        textDecoration: "none",
-        bg: useColorModeValue("gray.200", "gray.700"),
-      }}
-      href={"#"}
-    >
-      {children}
-    </Box>
-  );
-};
+const Links = [
+  {
+    title: "GitHub",
+    url: "https://github.com/MNATorres",
+    icon: <FaGithub />,
+  },
+  {
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/matias-torres-react/",
+    icon: <FaLinkedin />,
+  },
+  {
+    title: "Curriculum",
+    url: cv,
+    icon: <HiOutlineDocumentArrowDown />,
+  },
+];
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <>
-      <Box bg={"#202123"} color={"white"} px={4} position={'fixed'} top={0} zIndex={99} w={"full"}>
+    <Flex
+      justify={"center"}
+      bg={"#202123fa"}
+      w={"full"}
+      position={"fixed"}
+      top={0}
+      zIndex={99}
+      opacity={25}
+    >
+      <Box color={"white"} px={4} w={"full"} maxW={"7xl"}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
@@ -66,16 +68,16 @@ export default function Navbar() {
             >
               {Links.map((link) => (
                 <Link
-                  href="#"
+                  href={link.url}
                   bg={"none"}
-                  padding={'5px'}
-                  borderRadius={'3px'}
+                  padding={"5px"}
+                  borderRadius={"3px"}
                   color={"white"}
-                  key={link}
-                  _hover={{ background: "#40414f"}}
+                  key={link.title}
+                  _hover={{ background: "#40414f" }}
                   isExternal
                 >
-                  {link}
+                  <Box fontSize={25}>{link.icon}</Box>
                 </Link>
               ))}
             </HStack>
@@ -110,12 +112,20 @@ export default function Navbar() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <Link
+                  href={link.url}
+                  display={"flex"}
+                  alignItems={"center"}
+                  key={link.title}
+                >
+                  <Box fontSize={25}>{link.icon}</Box>{" "}
+                  <Box m={2}>{link.title}</Box>
+                </Link>
               ))}
             </Stack>
           </Box>
         ) : null}
       </Box>
-    </>
+    </Flex>
   );
 }
