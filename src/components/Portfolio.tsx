@@ -2,7 +2,7 @@ import { Flex } from "@chakra-ui/react";
 import CardProject from "./CardProject";
 import Chat from "./../assets/Chat.png";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 import { IoLogoSass } from "react-icons/io5";
 import { SiMongodb } from "react-icons/si";
 
@@ -14,6 +14,7 @@ const dataProject = [
       <>
         <FaReact style={{ color: "#149eca", marginRight: "2px" }} />
         <FaNodeJs style={{ color: "green", marginRight: "2px" }} />
+        <BiLogoJavascript style={{ color: "#f7e018", marginRight: "2px" }}s />
         <BiLogoTypescript style={{ color: "#3178c6", marginRight: "2px" }} />
         <SiMongodb style={{ color: "green", marginRight: "2px" }} />
         <IoLogoSass style={{ color: "#c04484", marginRight: "2px" }} />

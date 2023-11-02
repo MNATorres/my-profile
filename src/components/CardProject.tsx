@@ -41,7 +41,7 @@ export default function CardProject({
       m={1}
       transition={"all 500ms"}
       zIndex={1}
-      border={"0.5px solid #1484e1"}
+      boxShadow= {'rgba(0, 0, 0, 0.35) 0px 5px 15px'}
       _hover={{
         background: "#18191a",
       }}
