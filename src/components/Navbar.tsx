@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Box,
   Flex,
@@ -50,7 +48,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={"#202123"} color={"white"} px={4}>
+      <Box bg={"#202123"} color={"white"} px={4} position={'fixed'} top={0} zIndex={99} w={"full"}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
