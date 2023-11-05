@@ -47,7 +47,7 @@ const SocialButton = ({
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
-        bg: '#1484e1',
+        bg: "#1484e1",
       }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
@@ -100,13 +100,22 @@ export default function Footer() {
         >
           <Text>☺ 2022 Perfil de Matias Torres</Text>
           <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"https://www.linkedin.com/in/matias-torres-react/"}>
+            <SocialButton
+              label={"Twitter"}
+              href={"https://www.linkedin.com/in/matias-torres-react/"}
+            >
               <FaLinkedinIn />
             </SocialButton>
-            <SocialButton label={"YouTube"} href={"https://github.com/MNATorres"}>
+            <SocialButton
+              label={"YouTube"}
+              href={"https://github.com/MNATorres"}
+            >
               <FaGithub />
             </SocialButton>
-            <SocialButton label={"Instagram"} href={"https://api.whatsapp.com/send?phone=5491126328057"}>
+            <SocialButton
+              label={"Instagram"}
+              href={"https://api.whatsapp.com/send?phone=5491126328057"}
+            >
               <FaWhatsapp />
             </SocialButton>
           </Stack>
