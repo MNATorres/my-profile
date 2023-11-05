@@ -1,5 +1,4 @@
 import { Link, Text, Box } from "@chakra-ui/react";
-import { AiOutlineMail } from "react-icons/ai";
 
 interface ContactProps {
   urlContact: string;

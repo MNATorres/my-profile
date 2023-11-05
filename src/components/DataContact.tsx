@@ -44,6 +44,7 @@ export default function DatasContact() {
           return (
             <>
               <Contact
+                key={i}
                 urlContact={information.urlContact}
                 iconContact={information.iconContact}
                 dataContact={information.dataContact}
