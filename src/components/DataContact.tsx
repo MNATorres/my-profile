@@ -32,7 +32,7 @@ const contactInformation = [
 
 export default function DatasContact() {
   return (
-    <Flex w={"full"} py={8} justify={"center"}>
+    <Flex w={"full"} paddingBottom={8} justify={"center"}>
       <Flex
         justify={"space-around"}
         px={4}

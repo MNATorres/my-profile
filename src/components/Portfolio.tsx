@@ -9,6 +9,7 @@ import { BiLogoTypescript, BiLogoJavascript, BiLogoHtml5, BiLogoCss3 } from "rea
 import { IoLogoSass } from "react-icons/io5";
 import { SiMongodb, SiChakraui, SiMui } from "react-icons/si";
 import { FaLess } from "react-icons/fa6";
+import TitleSection from "./TitleSection";
 
 const dataProject = [
   {
