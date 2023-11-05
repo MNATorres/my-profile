@@ -38,7 +38,7 @@ export default function CardProject({
       bg={"#202123"}
       w={{ base: "47%", sm: "45%", lg: "30%" }}
       minW={"169px"}
-      mx={1}
+      mx={{ base: 1, sm: 1, lg: 3 }}
       my={2}
       transition={"all 500ms"}
       zIndex={1}
