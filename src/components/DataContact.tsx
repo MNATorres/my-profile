@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import Contact from "./Contact";
 import {
   AiOutlineMail,
@@ -6,6 +6,7 @@ import {
   AiOutlineGithub,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
+import TitleSection from "./TitleSection";
 
 const contactInformation = [
   {
@@ -32,27 +33,29 @@ const contactInformation = [
 
 export default function DatasContact() {
   return (
-    <Flex w={"full"} py={8} justify={"center"}>
-      <Flex
-        justify={"space-around"}
-        px={4}
-        w={"full"}
-        maxW={"7xl"}
-        wrap={"wrap"}
-      >
-        {contactInformation.map((information, i) => {
-          return (
-            <>
-              <Contact
-                key={i}
-                urlContact={information.urlContact}
-                iconContact={information.iconContact}
-                dataContact={information.dataContact}
-              />
-            </>
-          );
-        })}
-      </Flex>
+    <Flex w={"full"} marginBottom={20} direction={'column'} align={'center'} >
+      <TitleSection title="Datos de Contacto" />
+      <Box w={"full"} maxW={"7xl"}>
+        <Flex
+          justify={"space-around"}
+          px={1}
+          
+          wrap={"wrap"}
+        >
+          {contactInformation.map((information, i) => {
+            return (
+              <>
+                <Contact
+                  key={i}
+                  urlContact={information.urlContact}
+                  iconContact={information.iconContact}
+                  dataContact={information.dataContact}
+                />
+              </>
+            );
+          })}
+        </Flex>
+      </Box>
     </Flex>
   );
 }
