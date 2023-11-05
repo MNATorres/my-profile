@@ -1,6 +1,11 @@
 import { Flex } from "@chakra-ui/react";
 import Contact from "./Contact";
-import { AiOutlineMail, AiOutlineLinkedin, AiOutlineGithub, AiOutlineWhatsApp } from "react-icons/ai";
+import {
+  AiOutlineMail,
+  AiOutlineLinkedin,
+  AiOutlineGithub,
+  AiOutlineWhatsApp,
+} from "react-icons/ai";
 
 const contactInformation = [
   {
@@ -27,7 +32,7 @@ const contactInformation = [
 
 export default function DatasContact() {
   return (
-    <Flex w={"full"} py={5} justify={"center"} marginBottom={300}>
+    <Flex w={"full"} py={5} justify={"center"}>
       <Flex
         justify={"space-around"}
         px={4}
@@ -50,4 +55,3 @@ export default function DatasContact() {
     </Flex>
   );
 }
-
