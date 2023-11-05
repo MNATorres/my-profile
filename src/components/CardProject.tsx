@@ -36,9 +36,10 @@ export default function CardProject({
     <Card
       color={"white"}
       bg={"#202123"}
-      w={{ base: "47%", sm: "40%", lg: "30%" }}
+      w={{ base: "47%", sm: "45%", lg: "30%" }}
       minW={"169px"}
-      m={1}
+      mx={1}
+      my={2}
       transition={"all 500ms"}
       zIndex={1}
       boxShadow= {'rgba(0, 0, 0, 0.35) 0px 5px 15px'}
