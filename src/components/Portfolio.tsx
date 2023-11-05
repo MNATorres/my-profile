@@ -94,7 +94,7 @@ const dataProject = [
 export default function Portfolio() {
   return (
     <Flex zIndex={33} w={"full"} direction={"column"} align={"center"} marginBottom={10}>
-      <TitleSection />
+      <TitleSection title="Algunos Proyectos" />
       <Box maxW={"7xl"}>
         <Flex
           maxW={"7xl"}

@@ -34,7 +34,7 @@ const contactInformation = [
 export default function DatasContact() {
   return (
     <Flex w={"full"} marginBottom={20} direction={'column'} align={'center'} >
-      <TitleSection />
+      <TitleSection title="Datos de Contacto" />
       <Box w={"full"} maxW={"7xl"}>
         <Flex
           justify={"space-around"}

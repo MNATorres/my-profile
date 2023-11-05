@@ -69,16 +69,20 @@ export default function Footer() {
       >
         <Logo />
         <Stack direction={"row"} spacing={6}>
-          <Box as="a" href={"#"}>
+          <Box as="a" href={"#"} _hover={{ color: "#1484e1" }}>
             Inicio
           </Box>
-          <Box as="a" href={"#"}>
+          <Box as="a" href={"#"} _hover={{ color: "#1484e1" }}>
             Proyectos
           </Box>
-          <Box as="a" href={"https://www.linkedin.com/in/matias-torres-react/"}>
+          <Box
+            as="a"
+            href={"https://www.linkedin.com/in/matias-torres-react/"}
+            _hover={{ color: "#1484e1" }}
+          >
             LinkedIn
           </Box>
-          <Box as="a" href={"#"}>
+          <Box as="a" href={"#"} _hover={{ color: "#1484e1" }}>
             Contacto
           </Box>
         </Stack>

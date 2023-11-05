@@ -1,6 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 
-export default function TitleSection() {
+export default function TitleSection({title}: {title: string}) {
   return (
     <Flex width={"full"} justify={"center"} my={10}>
       <Box width={"full"} px={4} maxW={"7xl"} zIndex={3}>
@@ -21,7 +21,7 @@ export default function TitleSection() {
             zIndex: -1,
           }}
         >
-          Soy un Título
+          {title}
         </Text>
       </Box>
     </Flex>
