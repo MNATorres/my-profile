@@ -12,8 +12,11 @@ import {
   createIcon,
   IconProps,
 } from "@chakra-ui/react";
+import { useScroll } from "../hooks/useScroll";
 
 export default function Hero() {
+  const { scrollToSection } = useScroll();
+
   return (
     <Container maxW={"7xl"} mt={"1%"}>
       <Stack
@@ -71,17 +74,12 @@ export default function Hero() {
               colorScheme={"red"}
               bg={"#4299e1"}
               _hover={{ bg: "#015397" }}
+              onClick={() => scrollToSection("portfolio")}
             >
               Get started
             </Button>
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              leftIcon={<PlayIcon h={4} w={4} color={"#4299e1"} />}
-            >
-              How It Works
+            <Button onClick={() => scrollToSection("contact")} rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
+              Contact
             </Button>
           </Stack>
         </Stack>
@@ -110,18 +108,6 @@ export default function Hero() {
             width={"full"}
             overflow={"hidden"}
           >
-            <IconButton
-              aria-label={"Play Button"}
-              variant={"ghost"}
-              _hover={{ bg: "transparent" }}
-              icon={<PlayIcon w={12} h={12} />}
-              size={"lg"}
-              color={"white"}
-              position={"absolute"}
-              left={"50%"}
-              top={"50%"}
-              transform={"translateX(-50%) translateY(-50%)"}
-            />
             <Image
               alt={"Hero Image"}
               fit={"cover"}
@@ -129,7 +115,7 @@ export default function Hero() {
               w={"100%"}
               h={"100%"}
               src={
-                "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                "https://images.ctfassets.net/txbhe1wabmyx/15Xk8FlZKdsdxofRlToDUP/ac8cafed5b9c3f2e2e8057ca6c17f5f7/christopher-gower-m_hrflhgabo-unsplash.jpg"
               }
             />
           </Box>
