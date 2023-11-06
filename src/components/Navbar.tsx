@@ -1,7 +1,8 @@
-import { Box, Flex, HStack, Link } from "@chakra-ui/react";
+import { Box, Flex, HStack, Image, Link } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
 import cv from "./../../React-Developer-Matias-Torres.pdf";
+import logo from './../assets/profile.png'
 
 const Links = [
   {
@@ -36,7 +37,9 @@ export default function Navbar() {
       <Box color={"white"} px={4} w={"full"} maxW={"7xl"}>
         <Flex h={16}>
           <HStack spacing={8} w={'full'} alignItems={"center"} display={'flex'} justifyContent={{ base: "space-between", sm: "space-between", lg: "start" }}>
-            <Box>Logo</Box>
+            <Box as="a" href={"#"}>
+              <Image height={35} src={logo} />
+            </Box>
             <HStack as={"nav"} spacing={4} display={"flex"}>
               {Links.map((link) => (
                 <Link

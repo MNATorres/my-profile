@@ -108,18 +108,6 @@ export default function Hero() {
             width={"full"}
             overflow={"hidden"}
           >
-            <IconButton
-              aria-label={"Play Button"}
-              variant={"ghost"}
-              _hover={{ bg: "transparent" }}
-              icon={<PlayIcon w={12} h={12} />}
-              size={"lg"}
-              color={"white"}
-              position={"absolute"}
-              left={"50%"}
-              top={"50%"}
-              transform={"translateX(-50%) translateY(-50%)"}
-            />
             <Image
               alt={"Hero Image"}
               fit={"cover"}
@@ -127,7 +115,7 @@ export default function Hero() {
               w={"100%"}
               h={"100%"}
               src={
-                "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                "https://images.ctfassets.net/txbhe1wabmyx/15Xk8FlZKdsdxofRlToDUP/ac8cafed5b9c3f2e2e8057ca6c17f5f7/christopher-gower-m_hrflhgabo-unsplash.jpg"
               }
             />
           </Box>

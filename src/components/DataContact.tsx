@@ -43,14 +43,12 @@ export default function DatasContact() {
         >
           {contactInformation.map((information, i) => {
             return (
-              <>
                 <Contact
                   key={i}
                   urlContact={information.urlContact}
                   iconContact={information.iconContact}
                   dataContact={information.dataContact}
                 />
-              </>
             );
           })}
         </Flex>
