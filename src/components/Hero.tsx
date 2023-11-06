@@ -12,8 +12,11 @@ import {
   createIcon,
   IconProps,
 } from "@chakra-ui/react";
+import { useScroll } from "../hooks/useScroll";
 
 export default function Hero() {
+  const { scrollToSection } = useScroll();
+
   return (
     <Container maxW={"7xl"} mt={"1%"}>
       <Stack
@@ -71,17 +74,12 @@ export default function Hero() {
               colorScheme={"red"}
               bg={"#4299e1"}
               _hover={{ bg: "#015397" }}
+              onClick={() => scrollToSection("portfolio")}
             >
               Get started
             </Button>
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              leftIcon={<PlayIcon h={4} w={4} color={"#4299e1"} />}
-            >
-              How It Works
+            <Button onClick={() => scrollToSection("contact")} rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
+              Contact
             </Button>
           </Stack>
         </Stack>

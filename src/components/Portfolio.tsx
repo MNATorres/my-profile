@@ -93,7 +93,15 @@ const dataProject = [
 
 export default function Portfolio() {
   return (
-    <Flex zIndex={33} w={"full"} direction={"column"} align={"center"} marginBottom={10}>
+    <Flex
+      id="portfolio"
+      zIndex={33}
+      w={"full"}
+      direction={"column"}
+      align={"center"}
+      marginBottom={10}
+      pt={10}
+    >
       <TitleSection title="Algunos Proyectos" />
       <Box maxW={"7xl"}>
         <Flex

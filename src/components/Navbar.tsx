@@ -31,6 +31,7 @@ export default function Navbar() {
       top={0}
       zIndex={99}
       opacity={25}
+      id="inicio"
     >
       <Box color={"white"} px={4} w={"full"} maxW={"7xl"}>
         <Flex h={16}>

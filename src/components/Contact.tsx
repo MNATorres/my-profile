@@ -13,6 +13,7 @@ export default function Contact({
 }: ContactProps) {
   return (
     <Box
+      id="contact"
       w={{ base: "48%", sm: "22%", lg: "22%" }}
       minW={{ base: "unset", sm: "197.11px", lg: "unset" }}
       marginBottom={4}

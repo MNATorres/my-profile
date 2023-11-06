@@ -39,7 +39,6 @@ export default function DatasContact() {
         <Flex
           justify={"space-around"}
           px={1}
-          
           wrap={"wrap"}
         >
           {contactInformation.map((information, i) => {

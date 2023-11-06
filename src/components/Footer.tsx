@@ -12,6 +12,7 @@ import {
 import { FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { ReactNode } from "react";
 import Perfil from "./../assets/profile.png";
+import cv from "./../../React-Developer-Matias-Torres.pdf";
 
 const Logo = () => {
   return (
@@ -72,8 +73,8 @@ export default function Footer() {
           <Box as="a" href={"#"} _hover={{ color: "#1484e1" }}>
             Inicio
           </Box>
-          <Box as="a" href={"#"} _hover={{ color: "#1484e1" }}>
-            Proyectos
+          <Box as="a" href={cv} _hover={{ color: "#1484e1" }}>
+            Curriculum
           </Box>
           <Box
             as="a"
@@ -81,9 +82,6 @@ export default function Footer() {
             _hover={{ color: "#1484e1" }}
           >
             LinkedIn
-          </Box>
-          <Box as="a" href={"#"} _hover={{ color: "#1484e1" }}>
-            Contacto
           </Box>
         </Stack>
       </Container>
